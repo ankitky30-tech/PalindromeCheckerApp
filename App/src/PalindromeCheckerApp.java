@@ -1,7 +1,15 @@
 public class PalindromeCheckerApp {
+
     public static void main(String[] args) {
 
-        System.out.println(" Welcome to Palindrome Checker App ");
-        System.out.println("this is uc1");
+        // UC2: Hardcoded Palindrome Check
+        String word = "madam";   // hardcoded string
+        String reversed = new StringBuilder(word).reverse().toString();
+
+        if (word.equals(reversed)) {
+            System.out.println(word + " is a palindrome.");
+        } else {
+            System.out.println(word + " is NOT a palindrome.");
+        }
     }
 }
